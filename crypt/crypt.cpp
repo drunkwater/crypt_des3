@@ -565,7 +565,7 @@ int main(int argc, char **argv, char **env)
 	{
 		if (0 == method)
 		{
-			const char salt[64] = "$1$9.K/H0g1";/*fixed salt */
+			const char salt[64] = "";/*fixed salt */
 			char *cipher = crypt(p, salt);
 			fprintf(stdout, "MD5 Encrypt string=%s To %s \n", p, cipher);
 		}
