@@ -602,7 +602,6 @@ int main(int argc, char **argv, char **env)
 	}
 	case 3:
 	{
-		const char *ext = get_filename_extension(p);
 		if (0 == strncmp(ext, CONFIG_FILE_EXTENSION, strlen(CONFIG_FILE_EXTENSION)))
 		{
 			memcpy(out, p, length);
